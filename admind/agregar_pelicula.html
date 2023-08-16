@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agregar pelicula</title>
+  <link rel="stylesheet" href="/admind/admin.css">
+</head>
+<body>
+  <header>
+    <a href="/admind/admin.html">Dashboard</a>
+    <div class="menu">
+      <a href="/admind/agregar_pelicula.html">Agregar peliculas</a>
+    </div>
+  </header>
+
+  <form id="add-form">
+    <label>
+      Titulo<br>
+      <input class="form-data" name="title" type="text" placeholder="Nombre de la pelicula" required>
+    </label><br>
+
+    <label>
+      Genero<br>
+      <input class="form-data" name="genre" type="text" placeholder="Comedia, Acción, etc" required>
+    </label><br>
+
+    <label>
+      Dirección<br>
+      <input class="form-data" name="director" type="text" placeholder="ej. Steven Spielberg" required>
+    </label><br>
+
+    <label>
+      Producción<br>
+      <input class="form-data" name="production" type="text" placeholder="ej. Vilma Lopez" required>
+    </label><br>
+
+    <label>
+      Casa Productora<br>
+      <input class="form-data" name="publisher" type="text" placeholder="ej. Best Picture System" required>
+    </label><br>
+
+    <label>
+      País<br>
+      <input class="form-data" name="country" type="text" placeholder="País donde la pelicula fue dirigida" required>
+    </label><br>
+
+    <label>
+      Año<br>
+      <input class="form-data" name="year" type="number" min="1900" max="2024" placeholder="2023" required>
+    </label><br>
+
+    <label>
+      Enlace del tráiler<br>
+      <input class="form-data" name="trailer" type="text" placeholder="https://www.youtube.com/watch?=" required>
+    </label><br>
+
+    <label>
+      Enlace del video promocional<br>
+      <input class="form-data" name="promotional" type="text" placeholder="https://www.youtube.com/watch?=" required>
+    </label><br>
+
+    <label>
+      Sinopsis<br>
+      <textarea class="form-data" name="description" rows="5" placeholder="¿De que trata la pelicula?" required></textarea>
+    </label><br>
+
+    <label id="prizesContainer">
+      Premio(s)<br>
+      <input class="form-data" name="prizes" type="text" placeholder="ej. Selección Oficial de Chicago Latino Film Festival 2015" required>
+    </label><br>
+
+    <label id="scenesContainer">
+      Imagen(es)<br>
+      <input class="form-data" name="scenes" type="text" placeholder="Enlace de imagen" required>
+    </label><br>
+
+    <label id="behindScenesContainer">
+      Detras de camara(s)<br>
+      <input class="form-data" name="behind_scenes" type="text" placeholder="Enlace de imagen" required>
+    </label><br>
+
+    <div>
+      <label>
+        <input type="radio" name="option" value="largometraje" required>
+        Largometraje
+      </label>
+  
+      <label>
+        <input type="radio" name="option" value="cortometraje">
+        Cortometraje
+      </label>
+    </div>
+
+
+    <button type="submit">Agregar pelicula</button>
+  </form>
+  <script src="/admind/agregar_pelicula.js"></script>
+</body>
+</html>
